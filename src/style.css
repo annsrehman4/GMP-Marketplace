@@ -1,0 +1,76 @@
+/* style.css */
+.Home {
+  padding: 20px;
+}
+
+.front-page-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ad-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.ad-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ad-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.ad-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ad-description {
+  margin-top: 5px;
+}
+
+.ad-remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ad-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ad-icon {
+  margin-right: 5px;
+  color: #008cfd;
+}
+
+.ad-type {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Additional styles as needed */

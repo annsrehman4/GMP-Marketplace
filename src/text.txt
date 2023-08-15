@@ -1,0 +1,23 @@
+import './App.css';
+import FrontPage from './components/frontpage';
+import { Route  ,BrowserRouter, Routes } from 'react-router-dom';
+import Login from './Login';
+import Signup from './Signup';
+import { UserAuthContextProvider } from './context/UserAuthContextProvider';
+
+function App() {
+  return (
+    <BrowserRouter>
+     <UserAuthContextProvider>
+     <Routes>
+       <Route path='/' element= {<FrontPage/>}></Route>
+       <Route path='/login' element= {<Login/>}></Route>
+       <Route path='/signup' element= {<Signup/>}></Route>
+      </Routes>
+      </UserAuthContextProvider>
+       </BrowserRouter>
+  );
+}
+
+export default App;
+
